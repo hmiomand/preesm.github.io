@@ -1,0 +1,11 @@
+name: Update zip archives
+on: 
+    workflow_dispatch:
+
+jobs:
+    test_job:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Echo test
+              shell: bash
+              run: echo "Workflow triggered"
