@@ -31,8 +31,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: [PullSiteRepo, PullPreesmAppsRepo]
     steps:
-      - name: Display WD and content
+      - name: Display content
         shell: bash
         run: |
-          pwd
           ls -l
