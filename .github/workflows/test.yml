@@ -29,4 +29,4 @@ jobs:
     - name: Display content
       shell: bash
       run: |
-        tree -L 2 ${{ github.workspace }}/..
+        tree -L 3 ${{ github.workspace }}/..
