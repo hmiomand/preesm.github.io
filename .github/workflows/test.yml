@@ -34,4 +34,4 @@ jobs:
       - name: Display content
         shell: bash
         run: |
-          ls -l
+          ls
