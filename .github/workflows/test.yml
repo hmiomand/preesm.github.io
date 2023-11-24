@@ -25,4 +25,6 @@ jobs:
     - name: Display content
       shell: bash
       run: |
+        echo ${{ github.workspace }}
+        pwd
         ls -l
