@@ -12,17 +12,20 @@ jobs:
 
   DoThings:
     runs-on: ubuntu-latest
+    env:
+      SITE_PATH: ${{ github.workspace }}/preesm.github.io
+      APPS_PATH: ${{ github.workspace }}/preesm-apps
     steps:
     - name: Checkout Site Repo
       uses: actions/checkout@v4
       with:
         fetch-depth: 0  # Shallow clones should be disabled for a better relevancy of analysis
-        path: ${{ github.workspace }}/preesm.github.io
+        path: $SITE_PATH
     - name: Checkout Preesm-Apps Repo
       uses: actions/checkout@v4
       with:
         repository: hmiomand/preesm-apps
-        path: ${{ github.workspace }}/preesm-apps
+        path: $APPS_PATH
     - name: Display content
       shell: bash
       run: |
