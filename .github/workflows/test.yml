@@ -3,12 +3,12 @@ on:
   workflow_dispatch:
 
 jobs:
-  test_job:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Echo test
-        shell: bash
-        run: echo "Workflow triggered"
+  # test_job:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - name: Echo test
+  #       shell: bash
+  #       run: echo "Workflow triggered"
 
   PullSiteRepo:
     runs-on: ubuntu-latest
@@ -34,4 +34,4 @@ jobs:
       - name: Display content
         shell: bash
         run: |
-          ls
+          echo `ls`
